@@ -37,12 +37,13 @@ const askUser = (question) => {
 };
 
 (async () => {
-    console.log('Bem vindo ao ChatBot');
-    console.log('Digite "sair" a qualquer momento para sair');
+    console.log('Bem vindo ao ChatCamp');
+    console.log('Qual sua pergunta para hoje? ');
+    console.log('Digite "sair" a qualquer momento para sair.');
 
     try {
         while (true) {
-            const userMessage = await askUser('Você: ');
+            const userMessage = await askUser('Sua pergunta: ');
 
             if (userMessage.toLowerCase() === 'sair') {
                 console.log('Até mais!');
